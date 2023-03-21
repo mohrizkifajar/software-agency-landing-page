@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <div class="brand">Software</div>
+        <nav>
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="" class="nav-link">Services</a>
+          <a href="" class="nav-link">Career</a>
+          <a href="" class="nav-link">Blog</a>
+        </nav>
+      </div>
+      <a href="" class="btn">Contact Us</a>
+    </header>
+
+    <section id="home">
+      <div class="left">
+        <h1>
+          We Are A <br />
+          Software Company
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi nam in pariatur possimus ipsa at, recusandae quidem ipsam mollitia.</p>
+        <a href="" class="btn">Get Started</a>
+      </div>
+      <div class="image">
+        <img src="build.jpg" alt="Building" />
+      </div>
+      <div class="border"></div>
+      <div class="kotak"></div>
+    </section>
+    <section id="about" style="height: 100vh"></section>
+  </body>
+
+  <script>
+    window.onscroll = () => {
+      const header = document.querySelector('header')
+      const fixedNav = header.offsetTop
+
+      if (window.pageYOffset > fixedNav) {
+        header.classList.add('sticky')
+      } else {
+        header.classList.remove('sticky')
+      }
+    }
+  </script>
+</html>
